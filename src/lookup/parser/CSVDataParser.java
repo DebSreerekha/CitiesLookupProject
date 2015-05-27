@@ -25,7 +25,6 @@ public class CSVDataParser {
 		}
 	}
 	
-	@SuppressWarnings("resource")
 	public MyHashTable<String,String> parseFile(){
 		BufferedReader bufferedReader ;
 	    try {

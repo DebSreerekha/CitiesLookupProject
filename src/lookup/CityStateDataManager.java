@@ -1,7 +1,6 @@
 package lookup;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Iterator;
 
 import ds.hashtable.MyHashTable;
