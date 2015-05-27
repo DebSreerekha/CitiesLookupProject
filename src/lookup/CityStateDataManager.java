@@ -1,6 +1,7 @@
 package lookup;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 
 import ds.hashtable.MyHashTable;
@@ -26,6 +27,7 @@ public class CityStateDataManager {
 		{
 		 Iterator<String> iterator = citiesList.iterator() ;
 		 System.out.println("StateName : "+ "Andhra Pradesh");
+		 System.out.println("Cities in :  Andhra Pradesh");
 		 while(iterator.hasNext())
 		 {
 			 String cityName = iterator.next() ;
@@ -40,6 +42,7 @@ public class CityStateDataManager {
 
 	public  ArrayList<String> lookup(String stateName) {
 		// TODO Auto-generated method stub
+		
 		return hashtable.get(stateName);
 		
 	}

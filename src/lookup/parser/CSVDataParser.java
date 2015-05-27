@@ -55,7 +55,7 @@ public class CSVDataParser {
 			Names[i] = tokenizer.nextToken() ;
 			i++;
 		}
-		System.out.println(Names[1] + ":" +Names[0]);
+	//	System.out.println(Names[1] + ":" +Names[0]);
 		hashtable.put(Names[1],Names[0]);	
 	}
 	
