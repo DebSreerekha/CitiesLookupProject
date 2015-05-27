@@ -16,6 +16,7 @@ public class CSVDataParser {
 	
 	public CSVDataParser(String path){
 		try {
+			hashtable = new MyHashTable<String,String>();
 			reader = new FileReader(new File(path)) ;
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -54,7 +55,8 @@ public class CSVDataParser {
 			Names[i] = tokenizer.nextToken() ;
 			i++;
 		}
-		hashtable.put(Names[0],Names[1]);	
+		System.out.println(Names[1] + ":" +Names[0]);
+		hashtable.put(Names[1],Names[0]);	
 	}
 	
 

@@ -889,8 +889,8 @@
 +Seoni,Madhya Pradesh
 +Seoni-Malwa,Madhya Pradesh
 +Shahabad,Karnataka
-+"Shahabad, Hardoi",Uttar Pradesh
-+"Shahabad, Rampur",Uttar Pradesh
++Shahabad-Hardoi,Uttar Pradesh
++Shahabad-Rampur,Uttar Pradesh
 +Shahade,Maharashtra
 +Shahbad,Haryana
 +Shahdol,Madhya Pradesh
@@ -902,8 +902,8 @@
 +Shajapur,Madhya Pradesh
 +Shamgarh,Madhya Pradesh
 +Shamli,Uttar Pradesh
-+"Shamsabad, Agra",Uttar Pradesh
-+"Shamsabad, Farrukhabad",Uttar Pradesh
++Shamsabad-Agra,Uttar Pradesh
++Shamsabad-Farrukhabad,Uttar Pradesh
 +Shegaon,Maharashtra
 +Sheikhpura,Bihar
 +Shendurjana,Maharashtra
@@ -915,7 +915,7 @@
 +Sherkot,Uttar Pradesh
 +Shiggaon,Karnataka
 +Shikaripur,Karnataka
-+"Shikarpur, Bulandshahr",Uttar Pradesh
++Shikarpur-Bulandshahr,Uttar Pradesh
 +Shikohabad,Uttar Pradesh
 +Shillong,Meghalaya
 +Shimla,Himachal Pradesh
@@ -1159,7 +1159,7 @@
 +Venkatagiri,Andhra Pradesh
 +Veraval,Gujarat
 +Vidisha,Madhya Pradesh
-+"Vijainagar, Ajmer",Rajasthan
++Vijainagar -Ajmer,Rajasthan
 +Vijapur,Gujarat
 +Vijaypur,Madhya Pradesh
 +Vijayapura,Karnataka
