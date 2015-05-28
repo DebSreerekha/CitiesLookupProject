@@ -8,14 +8,15 @@ import lookup.parser.CSVDataParser;
 
 public class CityStateDataManager {
 	
-	public static final String PATH = "India_Cities_States.csv";
+	public static final String PATH_India = "India_Cities_States.csv";
+	
 	private MyHashTable<String,String> hashtable ;
 	
 	public CityStateDataManager()
 	{
-		//hashtable = new MyHashTable<String,String>();
-		CSVDataParser parser = new CSVDataParser(PATH);
-		hashtable  = parser.parseFile() ;
+		hashtable = new MyHashTable<String,String>();
+		CSVDataParser parser_india = new CSVDataParser(PATH_India);
+		hashtable  = parser_india.parseFile() ;
 	}
 	
 	public static void main(String []args)
@@ -36,7 +37,11 @@ public class CityStateDataManager {
 		else
 		{
 			System.out.println("No entries for the supplied string");
+
 		}
+		
+		
+
 	}
 
 	public  ArrayList<String> lookup(String stateName) {
