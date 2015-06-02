@@ -1,0 +1,20 @@
+Time taken for  Java Hashtable :17
+Time taken for  MyHashtable :469
+Time taken for  Sequential search with ArrayList :4251
+
+Time taken for  Java Hashtable :32
+Time taken for  MyHashtable :562
+Time taken for  Sequential search with ArrayList :4241
+
+
+Time taken for  Java Hashtable :31
+Time taken for  MyHashtable :500
+Time taken for  Sequential search with ArrayList :4193
+
+Time taken for  Java Hashtable :47
+Time taken for  MyHashtable :516
+Time taken for  Sequential search with ArrayList :4287
+
+Time taken for  Java Hashtable :31
+Time taken for  MyHashtable :484
+Time taken for  Sequential search with ArrayList :4190
