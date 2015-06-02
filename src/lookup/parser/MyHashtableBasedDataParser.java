@@ -7,14 +7,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
-import ds.hashtable.*;
+import ds.hashtable.MyHashTable;
 
-public class CSVDataParser {
+public class MyHashtableBasedDataParser implements Parser {
+
 	
 	private MyHashTable<String , String>  hashtable ;
 	private  FileReader reader ; 
 	
-	public CSVDataParser(String path){
+	public MyHashtableBasedDataParser(String path){
 		try {
 			hashtable = new MyHashTable<String,String>();
 			reader = new FileReader(new File(path)) ;
@@ -24,7 +25,7 @@ public class CSVDataParser {
 			System.exit(0);
 		}
 	}
-	
+	@Override
 	public MyHashTable<String,String> parseFile(){
 		BufferedReader bufferedReader ;
 	    try {
@@ -58,5 +59,6 @@ public class CSVDataParser {
 		hashtable.put(Names[1],Names[0]);	
 	}
 	
+
 
 }

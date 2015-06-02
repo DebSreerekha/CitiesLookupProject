@@ -1,18 +1,17 @@
 package lookup;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
 import ds.hashtable.MyHashTable;
 import lookup.parser.CSVDataParser;
 
-public class CityStateDataManager {
+public class CityDataManager {
 	
 	public static final String PATH_India = "India_Cities_States.csv";
 	
 	private MyHashTable<String,String> hashtable ;
 	
-	public CityStateDataManager()
+	public CityDataManager()
 	{
 		hashtable = new MyHashTable<String,String>();
 		CSVDataParser parser_india = new CSVDataParser(PATH_India);
@@ -21,7 +20,7 @@ public class CityStateDataManager {
 	
 	public static void main(String []args)
 	{
-		CityStateDataManager dataManager = new CityStateDataManager() ;
+		CityDataManager dataManager = new CityDataManager() ;
 		ArrayList<String> citiesList = dataManager.lookup("Andhra Pradesh");
 		if(citiesList != null)
 		{

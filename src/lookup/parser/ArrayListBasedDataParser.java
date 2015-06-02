@@ -5,19 +5,21 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+
 import java.util.StringTokenizer;
 
-import ds.hashtable.*;
+import ds.hashtable.Entry;
 
-public class CSVDataParser {
-	
-	private MyHashTable<String , String>  hashtable ;
+public class ArrayListBasedDataParser implements Parser {
+
+	private ArrayList<Entry<String , String>>  list ;
 	private  FileReader reader ; 
 	
-	public CSVDataParser(String path){
+	public ArrayListBasedDataParser(String pathIndia) {
 		try {
-			hashtable = new MyHashTable<String,String>();
-			reader = new FileReader(new File(path)) ;
+			list = new ArrayList<Entry<String,String>>();
+			reader = new FileReader(new File(pathIndia)) ;
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -25,14 +27,16 @@ public class CSVDataParser {
 		}
 	}
 	
-	public MyHashTable<String,String> parseFile(){
+	
+	@Override
+	public ArrayList<Entry<String,String>> parseFile() {
 		BufferedReader bufferedReader ;
 	    try {
 		        
 		        bufferedReader = new BufferedReader(reader) ;
 		        while(bufferedReader.ready()){
 		            String lineRead = bufferedReader.readLine();
-		            createHashTableEntry(lineRead );
+		            createListEntry(lineRead );
 		        } 
 	       
 	    }
@@ -41,10 +45,10 @@ public class CSVDataParser {
 	        ioe.printStackTrace();
 	        System.exit(0);
 	    }
-		return hashtable;
+		return list;
 	}
-
-	private void createHashTableEntry(String lineRead) {
+	
+	private void createListEntry(String lineRead) {
 		// TODO Auto-generated method stub
 		StringTokenizer tokenizer = new StringTokenizer (lineRead,",");
 		String Names [] =new String[2] ;
@@ -55,7 +59,7 @@ public class CSVDataParser {
 			i++;
 		}
 	//	System.out.println(Names[1] + ":" +Names[0]);
-		hashtable.put(Names[1],Names[0]);	
+		list.add (new Entry(Names[1],Names[0]));	
 	}
 	
 
