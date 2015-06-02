@@ -7,9 +7,6 @@ import java.util.Iterator;
 
 import ds.hashtable.Entry;
 import ds.hashtable.MyHashTable;
-import lookup.parser.ArrayListBasedDataParser;
-import lookup.parser.JavaHashtableBasedDataParser;
-import lookup.parser.MyHashtableBasedDataParser;
 
 
 public class PerformanceBenchmarking {

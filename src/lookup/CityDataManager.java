@@ -2,8 +2,8 @@ package lookup;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import parser.CSVDataParser;
 import ds.hashtable.MyHashTable;
-import lookup.parser.CSVDataParser;
 
 public class CityDataManager {
 	
