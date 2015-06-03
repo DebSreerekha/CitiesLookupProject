@@ -21,7 +21,6 @@ public class CityDataManagerTest {
 			     "Sullurpeta","Tadepalligudem","Tadpatri","Tanuku","Tenali","Tirupati","Tiruvuru","Tuni","Uravakonda","Venkatagiri","Vijayawada","Vinukonda",
 			     "Visakhapatnam","Vizianagaram","Yemmiganur","Yerraguntla"
 				};
-		
 		String actualResults[] = new String[expectedResults.length];
 
 		ArrayList<String> citiesList = dataManager.lookup("Andhra Pradesh");
