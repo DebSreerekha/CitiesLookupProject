@@ -29,8 +29,6 @@ public class CityDataManagerTest {
 		if(citiesList != null)
 		{
 		 Iterator<String> iterator = citiesList.iterator() ;
-		 System.out.println("StateName : "+ "Andhra Pradesh");
-		 System.out.println("Cities in :  Andhra Pradesh");
 		 int index = 0;
 		 while(iterator.hasNext())
 		 {
