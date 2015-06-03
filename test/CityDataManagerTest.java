@@ -29,22 +29,16 @@ public class CityDataManagerTest {
 		{
 		 Iterator<String> iterator = citiesList.iterator() ;
 		 int index = 0;
-		 while(iterator.hasNext())
-		 {
+		 while(iterator.hasNext()){
 			 String cityName = iterator.next() ;
 			 actualResults[index] = cityName;
 			 index++;
-			
 		 }
 		 
 		 assertArrayEquals(expectedResults, actualResults);
 		}
-		else
-		{
+		else{
 			System.out.println("No entries for the supplied string");
-
 		}
-		
-	}
-
+	  }
 }
