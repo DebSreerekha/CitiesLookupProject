@@ -7,7 +7,11 @@ import lookup.CityDataManager;
 
 import org.junit.Test;
 
-
+/**
+ * Junit test case file for city data manager 
+ * @author sreerekha
+ *
+ */
 public class CityDataManagerTest {
 	@Test 
 	public void checkFetchForAState(){ 
