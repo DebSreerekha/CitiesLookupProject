@@ -9,6 +9,7 @@ import org.junit.Test;
 
 
 public class CityDataManagerTest {
+	
 	@Test 
 	public void checkFetchForAState(){
 		CityDataManager dataManager = new CityDataManager() ;
