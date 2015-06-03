@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class CityDataManagerTest {
 	@Test 
-	public void checkFetchForAState(){
+	public void checkFetchForAState(){ 
 		CityDataManager dataManager = new CityDataManager() ;
 		String expectedResults[] = { "Adoni","Amalapuram","Anakapalle","Anantapur",	"Bapatla","Bheemunipatnam",	"Bhimavaram","Bobbili","Chilakaluripet",
 				 "Chirala","Chittoor","Dharmavaram","Eluru","Gooty","Gudivada","Gudur","Guntakal","Guntur","Hindupur","Jaggaiahpet","Jammalamadugu",
